@@ -1,0 +1,12 @@
+package com.mario.proto.repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.mario.proto.data.Medicines;
+
+@Repository
+public interface MedicinesRepository extends CrudRepository<Medicines, Long> {
+
+	
+}

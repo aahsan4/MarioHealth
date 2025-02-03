@@ -1,0 +1,10 @@
+package com.mario.proto.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.mario.proto.repository.UserRepository;
+
+public class UserController {
+	@Autowired
+	private final UserService userService;
+}

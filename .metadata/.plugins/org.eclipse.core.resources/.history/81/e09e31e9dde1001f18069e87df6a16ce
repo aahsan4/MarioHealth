@@ -1,0 +1,25 @@
+package com.mario.proto.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mario.proto.controller.Optional;
+import com.mario.proto.data.User;
+import com.mario.proto.repository.UserRepository;
+
+@Service
+public class UserService {
+
+	@Autowired
+	private final UserRepository userRepository;
+
+	public UserService(UserRepository userRepository) {
+		super();
+		this.userRepository = userRepository;
+	}
+
+	public Optional<User> getUserByUserName(String username) {
+		return userRepository.findByUserName(username);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.mario.proto.controller;
+
+public class MedicineController {
+
+}

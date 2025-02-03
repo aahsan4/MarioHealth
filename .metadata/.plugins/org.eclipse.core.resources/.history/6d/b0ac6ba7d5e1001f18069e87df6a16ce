@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package com.mario.proto.data;
+
+/**
+ * 
+ */
+public class User {
+
+	/**
+	 * 
+	 */
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

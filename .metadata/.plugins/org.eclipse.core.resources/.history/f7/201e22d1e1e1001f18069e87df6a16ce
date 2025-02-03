@@ -1,0 +1,46 @@
+/**
+ * 
+ */
+package com.mario.proto.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mario.proto.data.Medicines;
+import com.mario.proto.repository.MedicinesRepository;
+
+/**
+ * Service Class For Medicines
+ */
+
+@Service
+public class MedicinesService {
+
+	@Autowired
+	private final MedicinesRepository medicinesRepository;
+
+	public MedicinesService(MedicinesRepository medicinesRepository) {
+		super();
+		this.medicinesRepository = medicinesRepository;
+	}
+
+	private Optional<Medicines> findByName(String name) {
+		return medicinesRepository.findByName(name);
+	}
+
+	private List<Medicines> findByManufacturer(String manufacturer) {
+		return medicinesRepository.findByManufacturer(manufacturer);
+	}
+
+	private List<Medicines> findByType(String type) {
+		return medicinesRepository.findByType(type);
+	}
+
+	public List<Medicines> getAllMedicines() {
+		return medicinesRepository.findAll();
+	}
+
+}

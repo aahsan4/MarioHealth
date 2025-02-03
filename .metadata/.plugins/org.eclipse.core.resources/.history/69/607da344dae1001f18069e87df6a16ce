@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package com.mario.proto.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mario.proto.repository.MedicinesRepository;
+
+/**
+ * 
+ */
+
+@Service
+public class MedicinesService {
+
+	/**
+	 * 
+	 */
+	@Autowired
+	private final MedicinesRepository medicinesRepository;
+	
+	public MedicinesService(MedicinesRepository medicinesRepository) {
+		super();
+		this.medicinesRepository = medicinesRepository;
+	}
+	
+	
+
+}

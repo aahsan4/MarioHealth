@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package com.mario.proto.service;
+
+/**
+ * 
+ */
+public class MedicinesService {
+
+	/**
+	 * 
+	 */
+	public MedicinesService() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
